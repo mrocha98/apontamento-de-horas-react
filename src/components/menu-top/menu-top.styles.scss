@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import "../../styles/master";
+
+.menu-top {
+  background-color: white;
+  border-bottom: .15em solid #e0ebeb;
+
+  .menu-top-container {
+    display: grid;
+    grid-template-columns: 5% 10% 5% 60% 20%;
+    grid-template-areas: "logo titulo hamburger barra-pesquisa controle";
+    align-items: center;
+    justify-content: center;
+
+    .menu-top-container__logo {
+      grid-area: logo;
+      justify-self: center;
+    }
+
+    .menu-top-container__title {
+      grid-area: titulo;
+      justify-self: left;
+    }
+
+    .menu-top-container__hamburger-button {
+      grid-area: hamburger;
+      justify-self: left;
+    }
+
+    .menu-top-container__search-bar {
+      grid-area: barra-pesquisa;
+      position: relative;
+      width: 20%;
+
+      .search-bar__icon {
+        height: 1.45rem;
+        position: absolute;
+        left: 85%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.45rem;
+      }
+    }
+
+    .menu-top-container__control-buttons {
+      grid-area: controle;
+      justify-self: right;
+
+      &>button {
+        height: 2.3rem;
+        width: 2.3rem;
+        margin: 0 0.5em;
+      }
+
+      .control-buttons__config-button {
+        background-color: $color-button-config;
+      }
+
+      .control-buttons__fullscreen-button {
+        background-color: $color-button-fullscreen;
+      }
+
+      .control-buttons__config-button, .control-buttons__fullscreen-button {
+        justify-items: center;
+      }
+    }
+  }
+}
+
+.rounded-button {
+  border-radius: 50%;
+}
