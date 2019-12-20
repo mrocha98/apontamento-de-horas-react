@@ -7,7 +7,11 @@ const MenuTop = () => {
     return (
         <nav role="navigation" aria-label="main navigation" className="menu-top">
             <div className="navbar-brand menu-top-container">
+
+                <div className="menu-top-container__logo" />
+
                 <h1 className="menu-top-container__title">Projeto <strong>Fácil</strong></h1>
+
                 <button className="button is-text menu-top-container__hamburger-button">
                     <FontAwesomeIcon icon={faBars}/>
                 </button>

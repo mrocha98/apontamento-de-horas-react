@@ -13,8 +13,11 @@
     justify-content: center;
 
     .menu-top-container__logo {
+      background: url("https://dummyimage.com/32x32/3a6ea6/fff&text=PF");
       grid-area: logo;
+      height: 32px;
       justify-self: center;
+      width: 32px;
     }
 
     .menu-top-container__title {
